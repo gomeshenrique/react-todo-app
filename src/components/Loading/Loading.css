@@ -1,0 +1,14 @@
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transform-origin: center;
+  animation: spinning 850ms linear infinite;
+}
+
+@keyframes spinning {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
