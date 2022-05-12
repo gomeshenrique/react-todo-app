@@ -1,7 +1,6 @@
 import "./App.css";
-import { LoginButton } from "./components/LoginButton";
-import { LogoutButton } from "./components/LogoutButton";
-import { Profile } from "./components/Profile";
+import { WelcomePage } from "./components/WelcomePage/WelcomePage";
+import { Profile } from "./components/Profile/Profile";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Loading } from "./components/Loading/Loading";
 
@@ -12,10 +11,9 @@ export function App() {
     <Loading />
   ) : isAuthenticated ? (
     <>
-      <LogoutButton />
       <Profile />
     </>
   ) : (
-    <LoginButton />
+    <WelcomePage />
   );
 }

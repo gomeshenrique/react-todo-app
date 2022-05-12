@@ -1,0 +1,22 @@
+.profile-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1em;
+
+  background-color: #f4f6f6;
+  border: 1px solid #dde3e3;
+  border-radius: 0.5rem;
+}
+
+.profile-user__picture {
+  outline: 2px solid #a5b6b6;
+  outline-offset: 0.25rem;
+  border-radius: 50%;
+}
+
+.profile-user__info {
+  color: #374343;
+}
